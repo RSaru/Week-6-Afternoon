@@ -8,6 +8,16 @@ class bankAccount
 
     String sortCode;
 
+    String pinCode;
+
+    public void pin(String pinEnter)
+    {
+        this.pinCode = pinEnter;
+    }
+    public String pin()
+    {
+        return pinCode;
+    }
     public void deposit(double dep)
     {
         balance += dep;
